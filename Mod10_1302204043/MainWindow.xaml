@@ -9,8 +9,9 @@
     <Grid>
         <TextBox x:Name="txtInput" HorizontalAlignment="Left" Margin="228,132,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txtInput_TextChanged"/>
         <Button x:Name="btnInput" Content="Button" HorizontalAlignment="Left" Margin="389,131,0,0" VerticalAlignment="Top" Click="btnInput_Click"/>
-        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Margin="228,163,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txtOutput_TextChanged"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Margin="228,206,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txtOutput_TextChanged"/>
         <Label Content="Cari Nilai Pangkat" HorizontalAlignment="Left" Margin="95,128,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtInput2" HorizontalAlignment="Left" Margin="228,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txtInput2_TextChanged"/>
 
     </Grid>
 </Window>

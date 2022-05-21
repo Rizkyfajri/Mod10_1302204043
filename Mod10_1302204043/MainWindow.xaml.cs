@@ -25,10 +25,36 @@ namespace Mod10_1302204043
         {
             InitializeComponent();
         }
+        public double cariPangkat(int a, int b)
+        {
+            if (b == 0)
+            {
+                return 1;
+            }
+            else if (b < 0)
+            {
+                return -1;
+            }
+            else if (b > 10 || a > 100){
+                return -2;
+            }
+            else if (Math.Pow(a, b) > 2147483647)
+            {
+                return -3;
+            }
+            else 
+            { 
+                return Math.Pow(a, b);    
+            }
+            
+        }
 
         private void btnInput_Click(object sender, RoutedEventArgs e)
         {
-            Math.Pow()
+            
+            int a = Convert.ToInt32(txtInput.Text);
+            int b = Convert.ToInt32(txtInput2.Text);
+            txtOutput.Text = Convert.ToString(cariPangkat(a, b));
         }
 
         private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
@@ -37,6 +63,11 @@ namespace Mod10_1302204043
         }
 
         private void txtOutput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtInput2_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
